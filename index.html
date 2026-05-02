@@ -1477,6 +1477,16 @@
             flex-wrap: wrap;
         }
 
+        .skills-title {
+            margin-top: 24px;
+            margin-bottom: 14px;
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         .skill-item {
             padding: 8px 16px;
             background: var(--bg-primary);
@@ -1945,123 +1955,6 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 2.5rem;
-        }
-        
-        .description {
-            color: #7f8c8d;
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .content {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 20px;
-        }
-        
-        .content h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        .feature {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-        }
-        
-        .feature h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .feature h3::before {
-            content: "✓";
-            background: #3498db;
-            color: white;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            font-size: 12px;
-        }
-        
-        .demo-text {
-            margin-top: 30px;
-            line-height: 1.8;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #7f8c8d;
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 768px) {
-            .announcement-container {
-                padding: 0 15px;
-            }
-            
-            .announcement-title {
-                font-size: 14px;
-                margin-right: 15px;
-            }
-            
-            .announcement-list li {
-                font-size: 14px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .announcement-title {
-                font-size: 13px;
-                margin-right: 10px;
-            }
-            
-            .announcement-title::before {
-                margin-right: 5px;
-            }
-            
-            .announcement-list li {
-                font-size: 13px;
-            }
-        }
-        
-        /* 页面内容样式 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
             padding: 40px 20px;
         }
         
@@ -2440,6 +2333,16 @@
                             <span>性能优化</span>
                         </div>
                     </div>
+
+                    <div class="skills-title">我的技能</div>
+                    <div class="skills-quick">
+                        <div class="skill-item"><span>前端开发</span></div>
+                        <div class="skill-item"><span>后端开发</span></div>
+                        <div class="skill-item"><span>小程序开发</span></div>
+                        <div class="skill-item"><span>Python</span></div>
+                        <div class="skill-item"><span>C++</span></div>
+                        <div class="skill-item"><span>服务器维护</span></div>
+                    </div>
                 </div>
                 
                 <div class="about-visual">
@@ -2494,11 +2397,11 @@
                         <h3 class="project-title">YuHuan Blog</h3>
                         <p class="project-desc">探索数字世界的宝藏角落 | 分享实用资源与技术思考</p>
                         <div class="project-links">
-                            <a href="https://blog.317188.xyz" class="project-link">
+                            <a href="https://blog.317188.xyz" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>访问</span>
                             </a>
-                            <a href="https://github.com/solstice23/argon-theme" class="project-link">
+                            <a href="https://github.com/solstice23/argon-theme" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                                 <span>开源</span>
                             </a>
@@ -2522,11 +2425,11 @@
                         <h3 class="project-title">StarOrbit TV</h3>
                         <p class="project-desc">完全免费 值得信赖 你的下一个影视站！</p>
                         <div class="project-links">
-                            <a href="https://tv.317188.xyz" class="project-link">
+                            <a href="https://tv.317188.xyz" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>访问</span>
                             </a>
-                            <a href="https://github.com/lht153/YuHuanTV" class="project-link">
+                            <a href="https://github.com/lht153/YuHuanTV" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                                 <span>开源</span>
                             </a>
@@ -2550,11 +2453,11 @@
                         <h3 class="project-title">StarOrbit status</h3>
                         <p class="project-desc">基于 UptimeRobot API 开发的静态页 可部署在任何托管服务上</p>
                         <div class="project-links">
-                            <a href="https://status.317188.xyz" class="project-link">
+                            <a href="https://status.317188.xyz" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>访问</span>
                             </a>
-                            <a href="https://github.com/lht153/YuHuan-status" class="project-link">
+                            <a href="https://github.com/lht153/YuHuan-status" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                                 <span>开源</span>
                             </a>
@@ -2578,11 +2481,11 @@
                         <h3 class="project-title">YuHuan主页 （本站）</h3>
                         <p class="project-desc">精美好看的主页</p>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>访问</span>
                             </a>
-                            <a href="https://github.com/lht153/YuHuan-s-new-Home" class="project-link">
+                            <a href="https://github.com/lht153/YuHuan-s-new-Home" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                                 <span>开源</span>
                             </a>
@@ -2606,7 +2509,7 @@
                         <h3 class="project-title">StarOrbit Studio 开发团队</h3>
                         <p class="project-desc">StarOrbit Studio 开发团队</p>
                         <div class="project-links">
-                            <a href="https://studio.317188.xyz" class="project-link">
+                            <a href="https://studio.317188.xyz" class="project-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>访问</span>
                             </a>
@@ -2702,35 +2605,36 @@
             
 
             
-            document.addEventListener('DOMContentLoaded', function() {
-    const scrollItems = document.querySelector('.scroll-items');
-    const items = document.querySelectorAll('.scroll-item');
-    const scrollbar = document.querySelector('.top-scrollbar');
-    
-    let currentIndex = 0;
-    let interval;
-    
-    function startAutoScroll() {
-        interval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % items.length;
-            updateScrollPosition();
-        }, 3000);
-    }
-    
-    function updateScrollPosition() {
-        const itemWidth = items[0].offsetWidth;
-        scrollItems.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    }
-    
-    // 鼠标悬停暂停
-    scrollbar.addEventListener('mouseenter', () => clearInterval(interval));
-    
-    // 鼠标离开继续
-    scrollbar.addEventListener('mouseleave', startAutoScroll);
-    
-    // 初始化
-    startAutoScroll();
-});
+            const scrollItems = document.querySelector('.scroll-items');
+            const items = document.querySelectorAll('.scroll-item');
+            const scrollbar = document.querySelector('.top-scrollbar');
+
+            let currentIndex = 0;
+            let interval;
+
+            function startAutoScroll() {
+                interval = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % items.length;
+                    updateScrollPosition();
+                }, 3000);
+            }
+
+            function updateScrollPosition() {
+                const itemWidth = items[0].offsetWidth;
+                scrollItems.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            }
+
+            // 顶部滚动公告模块可选，缺失时跳过，避免脚本中断
+            if (scrollItems && scrollbar && items.length > 0) {
+                // 鼠标悬停暂停
+                scrollbar.addEventListener('mouseenter', () => clearInterval(interval));
+
+                // 鼠标离开继续
+                scrollbar.addEventListener('mouseleave', startAutoScroll);
+
+                // 初始化
+                startAutoScroll();
+            }
 
             // 自定义光标效果
             const cursor = document.querySelector('.cursor');
@@ -2739,39 +2643,46 @@
             let mouseX = 0, mouseY = 0;
             let cursorX = 0, cursorY = 0;
             let followerX = 0, followerY = 0;
+            let cursorScale = 1;
             
             document.addEventListener('mousemove', (e) => {
                 mouseX = e.clientX;
                 mouseY = e.clientY;
             });
             
-            function animateCursor() {
-                // 主光标跟随
-                cursorX += (mouseX - cursorX) * 0.1;
-                cursorY += (mouseY - cursorY) * 0.1;
-                cursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
-                
-                // 跟随光标
-                followerX += (mouseX - followerX) * 0.05;
-                followerY += (mouseY - followerY) * 0.05;
-                cursorFollower.style.transform = `translate(${followerX}px, ${followerY}px)`;
-                
-                requestAnimationFrame(animateCursor);
+            if (cursor && cursorFollower) {
+                function animateCursor() {
+                    // 主光标跟随（使用中心点对齐鼠标，避免偏移）
+                    cursorX += (mouseX - cursorX) * 0.1;
+                    cursorY += (mouseY - cursorY) * 0.1;
+                    cursor.style.transform = `translate(${cursorX - 10}px, ${cursorY - 10}px) scale(${cursorScale})`;
+                    
+                    // 跟随光标（同样做中心点对齐）
+                    followerX += (mouseX - followerX) * 0.05;
+                    followerY += (mouseY - followerY) * 0.05;
+                    cursorFollower.style.transform = `translate(${followerX - 4}px, ${followerY - 4}px)`;
+                    
+                    requestAnimationFrame(animateCursor);
+                }
+                animateCursor();
             }
-            animateCursor();
             
             // 光标悬停效果
             const interactiveElements = document.querySelectorAll('a, button, .project-card, .skill-item, .contact-method');
             
             interactiveElements.forEach(el => {
                 el.addEventListener('mouseenter', () => {
-                    cursor.style.transform += ' scale(1.5)';
-                    cursor.style.borderColor = '#2563eb';
+                    cursorScale = 1.5;
+                    if (cursor) {
+                        cursor.style.borderColor = '#2563eb';
+                    }
                 });
                 
                 el.addEventListener('mouseleave', () => {
-                    cursor.style.transform = cursor.style.transform.replace(' scale(1.5)', '');
-                    cursor.style.borderColor = '#2563eb';
+                    cursorScale = 1;
+                    if (cursor) {
+                        cursor.style.borderColor = '#2563eb';
+                    }
                 });
             });
             
