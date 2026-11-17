@@ -3,12 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="baidu-site-verification" content="codeva-NZ7P0Fsakr" />
-    <title>Hi, I'm YuHuan ✨</title>
-    <link rel="icon" type="image/png" href="img/tx.jpg">
+    <meta name="baidu-site-verification" content="codeva-NZ7P0Fsakr">
+    <title>YuHuan | 全栈开发者 · 星轨工作室</title>
+    <meta name="description" content="YuHuan 的个人主页：全栈开发者、星轨工作室室长。专注前端、后端与工业数字化，展示作品、技能与联系方式。">
+    <meta name="keywords" content="YuHuan,全栈开发者,星轨工作室,前端开发,个人主页,StarOrbit">
+    <meta name="author" content="YuHuan">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="canonical" href="https://317188.xyz/">
+    <link rel="icon" type="image/png" href="https://317188.xyz/img/tx.jpg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="YuHuan">
+    <meta property="og:title" content="YuHuan | 全栈开发者 · 星轨工作室">
+    <meta property="og:description" content="YuHuan 的个人主页：全栈开发者、星轨工作室室长。专注前端、后端与工业数字化，展示作品、技能与联系方式。">
+    <meta property="og:url" content="https://317188.xyz/">
+    <meta property="og:image" content="https://q1.qlogo.cn/g?b=qq&nk=3171882051&s=640">
+    <meta property="og:image:alt" content="YuHuan 头像">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="YuHuan | 全栈开发者 · 星轨工作室">
+    <meta name="twitter:description" content="YuHuan 的个人主页：全栈开发者、星轨工作室室长。专注前端、后端与工业数字化，展示作品、技能与联系方式。">
+    <meta name="twitter:image" content="https://q1.qlogo.cn/g?b=qq&nk=3171882051&s=640">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://q1.qlogo.cn" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://q1.qlogo.cn">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://317188.xyz/#website",
+                "name": "YuHuan",
+                "url": "https://317188.xyz/",
+                "description": "YuHuan 的个人主页：全栈开发者、星轨工作室室长。专注前端、后端与工业数字化，展示作品、技能与联系方式。",
+                "inLanguage": "zh-CN",
+                "publisher": { "@id": "https://317188.xyz/#person" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://317188.xyz/#person",
+                "name": "YuHuan",
+                "url": "https://317188.xyz/",
+                "image": "https://q1.qlogo.cn/g?b=qq&nk=3171882051&s=640",
+                "jobTitle": "全栈开发者",
+                "description": "热爱编程与设计的创作者，星轨工作室室长。",
+                "email": "mailto:mr.tiann@vip.qq.com",
+                "sameAs": [
+                    "https://github.com/lht153",
+                    "https://blog.317188.xyz",
+                    "https://studio.317188.xyz"
+                ]
+            }
+        ]
+    }
+    </script>
+
     <style>
         /* ===== Theme ===== */
         :root {
@@ -2136,17 +2199,18 @@
     </div>
 
     <!-- 导航点 -->
-    <nav class="nav-dots">
-        <div class="dot active" data-target="hero"></div>
-        <div class="dot" data-target="about"></div>
-        <div class="dot" data-target="work"></div>
-        <div class="dot" data-target="contact"></div>
+    <nav class="nav-dots" aria-label="页面章节导航">
+        <div class="dot active" data-target="hero" role="button" tabindex="0" aria-label="首页"></div>
+        <div class="dot" data-target="about" role="button" tabindex="0" aria-label="关于我"></div>
+        <div class="dot" data-target="work" role="button" tabindex="0" aria-label="精选作品"></div>
+        <div class="dot" data-target="contact" role="button" tabindex="0" aria-label="联系我"></div>
     </nav>
 
     <!-- 鼠标光标 -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
+    <main id="main-content">
     <!-- 主页 -->
     <section id="hero" class="hero">
         <div class="hero-bg">
@@ -2208,7 +2272,7 @@
                         </div>
                     </div>
                     <div class="hero-info">
-                        <h2 class="avatar-name reveal" style="--reveal-delay: 0ms">YuHuan</h2>
+                        <h1 class="avatar-name reveal" style="--reveal-delay: 0ms">YuHuan</h1>
                         <p class="hero-description reveal" style="--reveal-delay: 80ms">热爱编程与设计的创作者<br>星轨工作室室长</p>
                         <div class="title-subtitle reveal" style="--reveal-delay: 160ms">
                             <span class="role-text">全栈开发者</span>
@@ -2670,6 +2734,7 @@
             </div>
         </footer>
     </section>
+    </main>
 
     <script>
         const AVATAR_URL = 'https://q1.qlogo.cn/g?b=qq&nk=3171882051&s=640';
